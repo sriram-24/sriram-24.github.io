@@ -1,0 +1,58 @@
+/*color pallete*/
+.bgblue{
+    background-color: #3B57BE !important;
+}
+.bgred{
+    background-color: #DB2323 !important;
+}
+.bggrey{
+    background-color: #D7DEED !important;
+}
+.bgwhite{
+    background-color: #F7F9FF !important;
+}
+.bgpurple{
+    background-color: #201C44 !important;
+}
+.colorblue{
+color: #3B57BE !important;
+}
+.colorred{
+    color: #DB2323 !important;
+}
+.colorgrey{
+    color: #D7DEED !important;
+}
+.colorwhite{
+    color:#F7F9FF !important;
+}
+.colorpurple{
+    color:#201C44 !important;
+}
+/*basic styles*/
+nav{
+    height: 55px;
+}
+.btn:hover{
+    background-color: #3B57BE !important;
+    
+}
+
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=mobile]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=confirm_password]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #e91e63;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=mobile]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=confirm_password]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 2px solid #e91e63;
+    box-shadow: none;
+}
