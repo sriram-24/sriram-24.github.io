@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/materialize.min.css"><!--change it with online url-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--change it with online url-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Profile</title>
+    </head>
+          <body>           
+            <!--header page-->
+            <section>
+              <nav class="nav-wrapper bgblue">
+                <a href="#" class="brand-logo " style="height: 55px; padding-left: 10px !important;">sitelogo</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down" style="padding-right: 30px !important;">
+                  <li><a href="index.html" style="height: 55px;"> Home</a></li>
+                  <li><a href="login.html" style="height: 55px;">Login</a></li>
+                  <li><a href="register.html" style="height: 55px;">Signup</a></li>
+                  <li><a href="#" style="height: 55px;">Help</a></li>
+                  <li><a href="#" style="height: 55px;">About</a></li>
+                </ul>
+                <div class="container center ">
+                <ul class="sidenav bgblue" id="mobile-menu">
+                  <li><a href="index.html" class="white-text">Home</a></li>
+                  <li><a href="login.html" class="white-text">Login</a></li>
+                  <li><a href="register.html" class="white-text">Signup</a></li>
+                  <li><a href="#" class="white-text">Help</a></li>
+                  <li><a href="#" class="white-text">About</a></li>
+                </ul>
+                </div>
+              </nav>
+            </section>
+              <section>
+                <div class="container "  >
+                     <!--profile--> <center><h4>Profile</h4><center></center>
+              <div class="frm">     
+                <div id='profile-upload'>
+                <div class="hvr-profile-img">
+                  <input type="file" name="logo" id='getval'  class="upload"  id="imag">
+                  <div class="icon">
+                    <div class="camera4"><span></span></div>
+                  </div>
+                  </div>
+                 </div>
+                </div>
+              </section>
+                <div class="container">
+                  <!-- edit form column -->
+                  
+                  <div class="alert alert-info alert-dismissable">
+                    <a class="panel-close close" data-dismiss="alert"></a> 
+                    <i class="material-icons red-text">error</i>
+                    <strong>Error will show here</strong>.
+                </div>
+              <div class="center">
+                  <h4>Personal info</h4>
+              </div>
+                  <form>
+                    <div class="row">
+                      <label>First name:</label>
+                      <div class="s6">
+                        <div style="text-align:center">
+                        <input type="text" value="Nithish" id="fname" size="2"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Last name:</label>
+                      <div class="col-lg-8">
+                        <input class="form-group" type="text" value="Kumar" id="lname">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Date of Birth:</label>
+                      <div>
+                          <input type="date" id="birthday" name="birthday">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Hobby:</label>
+                      <div class="col-lg-8">
+                        <input class="form-control" type="text" value="Cricket">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Email:</label>
+                      <div class="col-lg-8">
+                        <input class="form-control" type="text" value="nithishkumar@gmail.com">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Department:</label>
+                      <div class="col-lg-8">
+                       
+                        <input type="text" value="CSE" id="branch">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Section:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="A">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>10th School name:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="ABC school:">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Year of Passing 10th:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="2015">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>10th percentage: </label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="75">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>12th School name:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="ABC school">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Year of Passing 12th:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="2017">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>12th percentage:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="80">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>college/university name:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="ABC college">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Year of Passing Degree:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="2021">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Degree percentage:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="70">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Address</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Skills</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="Core C programming">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>Languages Known:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="Tamil,english">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>LinkedIn Id:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label>GitHub Id:</label>
+                      <div class="col-md-8">
+                        <input class="form-control" type="text" value="">
+                      </div>
+                    </div>
+                    <label style='float: right;'>
+                      <a class='pink-text' href='#!'><b>Change Password</b></a>
+                    </label>
+                    <div class="row">
+                      <label></label>
+                      <div class="col-md-8">
+                        <a class="waves-effect waves-light btn bgred">Update profile</a>
+                        <a class="waves-effect waves-light btn bggrey black-text">Cancel</a>
+                      </div>
+                    </div>
+                   
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+              </section>
+           
+              <!--footer-->
+              <section>
+                <div class="page-footer footer-bottom bgpurple">
+                    <div class="row">
+                      <div class="container center">
+                        <div class="col s6 ">
+                          <a href="#" class="fa fa-facebook white-text">&nbsp; facebook profile</a> <br>
+                          <a href="#" class="fa fa-linkedin white-text">&nbsp; linkedin profile</a>
+                        </div>
+                        <div class="col s6">
+                          <a href="#" class="fa fa-instagram white-text">&nbsp; instagram profile</a> <br>
+                          <a href="#" class="fa fa-twitter white-text ">&nbsp; twitter profile</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-copyright"> 
+                      <div class="container center ">
+                          <a href="#" class="white-text">Terms of use</a> &nbsp; | &nbsp;
+                          <a href="#" class="white-text">Privacy policy</a><br>
+                        <i class="fa fa-copyright">&nbsp; 2020 Copyright reserved</i>
+                      </div>
+                    </div>
+                  </div>
+          </section>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="js/materialize.min.js"></script>
+                <script src="https://use.fontawesome.com/b293e7bb58.js"></script>
+                <script>
+                  document.getElementById('getval').addEventListener('change', readURL, true);
+                  function readURL(){
+                  var file = document.getElementById("getval").files[0];
+                  var reader = new FileReader();
+                  reader.onloadend = function(){
+                      document.getElementById('profile-upload').style.backgroundImage = "url(" + reader.result + ")";        
+                  }
+                  if(file){
+                      reader.readAsDataURL(file);
+                  }else{
+                  }
+                  }
+                </script>
+          </body>
+  </html>
