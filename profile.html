@@ -14,27 +14,39 @@
    <!--header-->
    <section>
     <nav class="nav-wrapper bgblue">
+      <ul id='dropdown-practice-lap' class='dropdown-content bgblue '>
+        <li><a href="company.html" class="colorwhite">Companies specific</a></li>
+        <li><a href="#!" class="colorwhite">Core subjects</a></li>
+        <li><a href="#!" class="colorwhite">Aptitude</a></li>
+      </ul>
     
       <a href="#" class="brand-logo " style="height: 55px; padding-left: 10px !important;">sitelogo</a>
       <a href="#" class="sidenav-trigger" data-target="mobile-menu">
         <i class="material-icons">menu</i>
       </a>
       <ul class="right hide-on-med-and-down" style="padding-right: 30px !important;">
-        <li><a href="index.html" style="height: 55px;"> Home</a></li>
-        <li><a href="#" style="height: 55px;">Practice</a></li>
+        <li><a href="#" style="height: 55px;">Dashboard</a></li>
+        <li><a href="#" style="height: 55px;">Profile</a></li>
+        <li><a href="#" style="height: 55px;" data-target='dropdown-practice-lap' class="dropdown-trigger colorwhite">Practice<i class="fa fa-caret-down white-text icon-after"></i></a></li>
+       
         <li><a href="#"  style="height: 55px;">Resources</a></li>
         <li><a href="#" style="height: 55px;">Help</a></li>
         <li><a href="#" style="height: 55px;">Logout <i class="fa fa-sign-out"></i></a></li>
       </ul>
       <div class="container center ">
       <ul class="sidenav bgblue" id="mobile-menu">
-      
-        <li><a href="index.html" class="white-text">Home</a></li>
-        <li><a href="#" class="white-text">Practice</a></li>
+        <li><a href="#" class="white-text">Dashboard</a></li>
+        <li><a href="profile.html" class="white-text">Profile</a></li>
+        <li><a href="#" style="height: 55px; margin-bottom:0px; margin-left: 90px;" data-target='dropdown-practice' class="dropdown-trigger colorwhite"><i class="fa fa-caret-down white-text icon-after">Practice </i></a></li>
         <li><a href="#" class="white-text">Resources</a></li>
         <li><a href="#" class="white-text">Help</a></li>
         <li><a href="#" class="white-text "><center><i class="fa fa-sign-out white-text">logout</i></center></a></li>
    
+      </ul>
+      <ul id='dropdown-practice' class='dropdown-content bgblue '>
+        <li><a href="company.html" class="colorwhite">Companies specific</a></li>
+        <li><a href="#!" class="colorwhite">Core subjects</a></li>
+        <li><a href="#!" class="colorwhite">Aptitude</a></li>
       </ul>
       </div>
     </nav>
@@ -212,34 +224,13 @@
     </form>
   </section>
   <!--footer-->
-  <section>
-    <div class="page-footer footer-bottom bgpurple">
-        <div class="row">
-          <div class="container center">
-            <div class="col s6 ">
-              <a href="#" class="fa fa-facebook white-text">&nbsp; facebook profile</a> <br>
-              <a href="#" class="fa fa-linkedin white-text">&nbsp; linkedin profile</a>
-            </div>
-            <div class="col s6">
-              <a href="#" class="fa fa-instagram white-text">&nbsp; instagram profile</a> <br>
-              <a href="#" class="fa fa-twitter white-text ">&nbsp; twitter profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright"> 
-          <div class="container center ">
-              <a href="#" class="white-text">Terms of use</a> &nbsp; | &nbsp;
-              <a href="#" class="white-text">Privacy policy</a><br>
-            <i class="fa fa-copyright">&nbsp; 2020 Copyright reserved</i>
-          </div>
-        </div>
-      </div>
-  </section>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script>
      $(document).ready(function(){
             $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown();
         });
     document.getElementById('getval').addEventListener('change', readURL, true);
     function readURL(){
