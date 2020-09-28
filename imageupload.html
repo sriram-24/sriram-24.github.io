@@ -26,7 +26,8 @@
                                 <div class="col-md-6">
                                     <div id="my_camera"></div>
                                     <br />
-                                    <input  type=button class="btn btn-primary" value="Take Picture" onClick="takePicture()">
+                                    <input type=button class="btn btn-primary" style="display: block;" id="LoadCamera" value="open camera"  onClick="loadcamera()">
+                                    <input  type=button class="btn btn-primary" style="display: none;" value="Take Picture" id="takepicture" onClick="takePicture()">
                                     <input type="hidden" name="image" class="image-tag">
                                 </div>
                                 <div class="col-md-6">
@@ -57,7 +58,19 @@
         crossorigin="anonymous"></script>
 
     <script>
-        Webcam.set({
+        function loadcamera(){
+            var takePicture = document.getElementById('takepicture');
+            var load=document.getElementById('LoadCamera')
+            if (takePicture.style.display == "none") {
+                takePicture.style.display = "block";
+                load.style.display="none";
+
+            }
+            else {
+                takePicture.style.display = "none";
+
+            }
+            Webcam.set({
                 width: 200,
                 height: 200,
                 image_format: 'jpeg',
@@ -68,10 +81,10 @@
                     }
                 }
             });
-           
-            Webcam.attach('#my_camera');
 
-            function takePicture() {
+            Webcam.attach('#my_camera');
+        }
+        function takePicture() {
                 Webcam.snap(function (data_uri) {
                     $(".image-tag").val(data_uri);
                     document.getElementById('results').innerHTML = '<img src="' + data_uri + '"/>';
