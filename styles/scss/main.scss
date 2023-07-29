@@ -6,26 +6,48 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Yaldevi', sans-serif;
+    color: $font-white;
 }
 
 body{
-    background-color: $primary-color;
-    animation: background-animation 10s infinite;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: $secondary-color;
 }
 
 .title{
     color: $font-white;
 }
 
-@keyframes background-animation{
-    0%   {background-color: rgba($color: $primary-color, $alpha: 1.0);}
-    25%  {background-color: rgba($color: $primary-color, $alpha: 0.90);}
-    50%  {background-color: rgba($color: $primary-color, $alpha: 0.80);}
-    75%  {background-color: rgba($color: $primary-color, $alpha: 0.90);}
-    100% {background-color: rgba($color: $primary-color, $alpha: 0.95);}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-text{
+    font-size: 46px;
+    animation: rollup-text 1s ease-in ;
+}
+
+@keyframes rollup-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.navigation{
+    background-color: $color-info;
+    
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
 }
