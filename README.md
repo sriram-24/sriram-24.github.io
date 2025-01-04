@@ -1,3 +1,5 @@
 # sriram-24.github.io
 
-Loading...
+Sriram's personal portfolio site. 
+
+current version : 2.0.0
